@@ -1,0 +1,25 @@
+.margin-top{
+	margin-top: 50px;
+}
+
+.design-a{
+	background: #f0f0f3;
+	color: black;
+}
+
+.design-b{
+	background: #f0f0f3;
+	color: black;
+}
+
+.footer{
+	background: #272727;
+	color: white;
+	min-height: 200px;
+}
+
+#addProductForm{
+	background: #cecece;
+	padding: 25px;
+	border-radius: 5px 5px 5px 5px;
+}
