@@ -43,8 +43,8 @@ class MasterController extends Controller
         $addProduct = array( 
                      'id' => $numberOfProducts, 
                      'product_name' =>   $r->product_name ,  
-                     'per_item_price' =>   $r->per_item_price  ,  
                      "product_quanity"=> $r->quantity,
+                     'per_item_price' =>   $r->per_item_price ,  
                      "total_price"=> $r->total     
                 );  
         $products[] = $addProduct;  

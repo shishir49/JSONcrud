@@ -90,8 +90,8 @@
                 columns: [
                     {data: 'DT_RowIndex', name: 'DT_RowIndex'},
                     {data: 'product_name', name: 'product_name'},
-                    {data: 'per_item_price', name: 'per_item_price'},
                     {data: 'product_quanity', name: 'product_quanity'},
+                    {data: 'per_item_price', name: 'per_item_price'},
                     {data: 'total_price', name: 'total_price'},
                     {data: 'action', name: 'action', orderable: false, searchable: false},
                 ]
