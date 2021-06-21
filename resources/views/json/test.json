@@ -30,9 +30,9 @@
     {
         "id": 4,
         "product_name": "Blueberries",
-        "product_quanity": "20",
+        "product_quanity": "50",
         "per_item_price": "50",
-        "total_price": "1000"
+        "total_price": "2500"
     },
     {
         "id": 5,
