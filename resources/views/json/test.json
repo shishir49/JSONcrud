@@ -1,1 +1,58 @@
-[{"id":0,"product_name":"Apple","product_quanity":"4","per_item_price":"10","total_price":"50"},{"id":1,"product_name":"Orange","product_quanity":"7","per_item_price":"10","total_price":"70"},{"id":2,"product_name":"Lichi","product_quanity":"50","per_item_price":"3","total_price":"150"},{"id":3,"product_name":"Mango","product_quanity":"5","per_item_price":"70","total_price":"350"},{"id":4,"product_name":"Blueberries","product_quanity":"20","per_item_price":"50","total_price":"1000"},{"id":5,"product_name":"Strawberries","product_quanity":"200","per_item_price":"40","total_price":"8000"},{"id":6,"product_name":"Banana","product_quanity":"40","per_item_price":"10","total_price":"400"}]
+[
+    {
+        "id": 0,
+        "product_name": "Apple",
+        "product_quanity": "5",
+        "per_item_price": "10",
+        "total_price": "50"
+    },
+    {
+        "id": 1,
+        "product_name": "Orange",
+        "product_quanity": "7",
+        "per_item_price": "10",
+        "total_price": "70"
+    },
+    {
+        "id": 2,
+        "product_name": "Lichi",
+        "product_quanity": "100",
+        "per_item_price": "3",
+        "total_price": "300"
+    },
+    {
+        "id": 3,
+        "product_name": "Mango",
+        "product_quanity": "5",
+        "per_item_price": "70",
+        "total_price": "350"
+    },
+    {
+        "id": 4,
+        "product_name": "Blueberries",
+        "product_quanity": "20",
+        "per_item_price": "50",
+        "total_price": "1000"
+    },
+    {
+        "id": 5,
+        "product_name": "Strawberries",
+        "product_quanity": "300",
+        "per_item_price": "40",
+        "total_price": "12000"
+    },
+    {
+        "id": 6,
+        "product_name": "Banana",
+        "product_quanity": "40",
+        "per_item_price": "10",
+        "total_price": "400"
+    },
+    {
+        "id": 7,
+        "product_name": "Fungi",
+        "product_quanity": "40",
+        "per_item_price": "20",
+        "total_price": "800"
+    }
+]
