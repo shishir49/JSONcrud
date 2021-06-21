@@ -14,10 +14,10 @@ class MasterController extends Controller
     {   
         if ($request->ajax()) {
 
-            $json = file_get_contents("../resources/views/json/test.json");
+            $jsonData = file_get_contents("../resources/views/json/test.json");
 
-            $gravatar = json_decode($json);
-            return Datatables::of($gravatar)
+            $getAllProducts = json_decode($jsonData);
+            return Datatables::of($getAllProducts)
                     ->addIndexColumn()
                     ->addColumn('action', function($row){
                         $btn = '<button type="submit" id="'.$row->id.'" class="edit btn btn-primary btn-sm">Edit</button>';
@@ -66,7 +66,7 @@ class MasterController extends Controller
 
         echo json_encode($productDataById[$id]);
     }
-    
+
 
    //-----------------------------Get Product Data By Id-----------------------------
 
