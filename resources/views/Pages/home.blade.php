@@ -21,27 +21,26 @@
           <div class="row">
               <form id="addProductForm">
                   <div class="form-group">
-                      <input class="form-control" required="required" type="hidden" name="id" id="id">
+                      <input class="form-control clear" required="required" type="hidden" name="id" id="id">
                   </div>
                   <div class="form-group">
                       <label for="product-name">Product Name</label>
-                      <input class="form-control" required="required" type="text" name="product_name" id="product-name">
+                      <input class="form-control clear" required="required" type="text" name="product_name" id="product-name">
                   </div>
                   <div class="form-group">
                       <label for="quantity">Quantity</label>
-                      <input class="form-control" required="required" type="number" name="quantity" id="quantity">
+                      <input class="form-control clear" required="required" type="number" name="quantity" id="quantity">
                   </div>
                   <div class="form-group">
                       <label for="price-per-item" >Price per Item</label>
-                      <input class="form-control per_item_price" type="number" name="per_item_price" required="required" id="price-per-item">
+                      <input class="form-control per_item_price clear" type="number" name="per_item_price" required="required" id="price-per-item">
                   </div>
                   <div class="form-group">
                       <label for="total">Total Value</label>
-                      <input class="form-control"  type="text" name="total" id="total">
+                      <input class="form-control clear"  type="text" name="total" id="total">
                   </div>
                   <div class="form-group">
                       <input class="btn btn-primary" type="submit">
-                      {{-- <input class="btn btn-danger" value="Clear" id="clearData"> --}}
                   </div>
               </form>
           </div>    

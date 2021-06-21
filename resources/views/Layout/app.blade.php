@@ -29,7 +29,6 @@
           
         <script>
 
-        //---------------------------------- Products----------------------------------
 
         var table; 
 
@@ -44,7 +43,13 @@
               , timer: 3000
           })
 
+          function clearData() {
+             $('.clear').val('');
+         }
+
           fetch_product();
+
+          //----------------------------------Add/Update Product----------------------------------
 
           $('#addProductForm').on('submit',function(event){
               event.preventDefault();
@@ -55,8 +60,8 @@
               let per_item_price = $('#price-per-item').val();
               let total = $('#total').val();
              
-              console.log(total);
-              $.ajax({
+            if (id=='') {
+                $.ajax({
                 url: "/add-product/",
                 type:"POST",
                 data:{
@@ -70,6 +75,7 @@
                   console.log(response);
                   table.destroy();
                   fetch_product();
+                  clearData();
                   
                   Msg.fire({
                       type: 'success'
@@ -78,9 +84,42 @@
                   });
                 },
               });
+            }else{
+                $.ajax({
+                url: "/edit-product/",
+                type:"POST",
+                data:{
+                  id:id,
+                  product_name:product_name,
+                  quantity:quantity,
+                  per_item_price:per_item_price,
+                  total:total,
+                },
+                success:function(response){
+                  console.log(response);
+                  table.destroy();
+                  fetch_product();
+                  clearData();
+                  
+                  Msg.fire({
+                      type: 'success'
+                      , icon: 'success'
+                      , title: 'Product Updated !'
+                  });
+                },
+              });
+            }
+              
           });
 
 
+          //----------------------------------Update Products----------------------------------
+
+        
+
+
+        //----------------------------------Fetch Products----------------------------------
+          
 
           function fetch_product(){
               table = $('.data-table').DataTable({
@@ -108,8 +147,7 @@
                 var quantity = $("#quantity").val();
                 var total_price = $("#total").val();
                 total_price = (parseFloat(per_item_price) * parseFloat(quantity));
-                $("#total").val(parseFloat(total_price));
-                
+                $("#total").val(parseFloat(total_price));  
             });
 
             $('input#quantity').keyup(function(){ 

@@ -18,7 +18,7 @@
 	min-height: 200px;
 }
 
-#addProductForm{
+#addProductForm, #updateProductForm{
 	background: #cecece;
 	padding: 25px;
 	border-radius: 5px 5px 5px 5px;

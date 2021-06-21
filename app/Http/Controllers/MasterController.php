@@ -66,5 +66,27 @@ class MasterController extends Controller
 
         echo json_encode($productDataById[$id]);
     }
+    
 
+   //-----------------------------Get Product Data By Id-----------------------------
+
+
+    public function editProduct(Request $r){
+        $allProductData = file_get_contents("../resources/views/json/test.json");
+
+        $productDataById = json_decode($allProductData, true);
+
+        foreach ($productDataById as $key => $value) {
+             if ($value['id']==$r->id) {
+                 $productDataById[$key]['product_name'] = $r->product_name;
+                 $productDataById[$key]['product_quanity'] = $r->quantity;
+                 $productDataById[$key]['per_item_price'] = $r->per_item_price;
+                 $productDataById[$key]['total_price'] = $r->total;
+             }
+        }
+
+        $productUpdated = json_encode($productDataById, JSON_PRETTY_PRINT);
+
+        file_put_contents("../resources/views/json/test.json", $productUpdated);
+    }
 }
